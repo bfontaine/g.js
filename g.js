@@ -3,17 +3,17 @@
 var from = function(n) {
         return {
             to: function(m) {
-                var f=n,t=m,s=1,excl=false;
+                var f=n,t=m,s=1,incl=true;
                 return {
                     by: function(_s) {s = _s;return this;},
-                    excluded: function() {excl=true;},
+                    excluded: function() {incl=false;return this;},
 
-                    do: function(f) {
-                        var i=n;
+                    do: function(fn) {
+                        var i=f;
                         for (;(s>0) ? i < t : i > t ;i+=s) {
-                            f.call(this, i);
+                            fn.call(this, i);
                         }
-                        excl && f.call(this, i);
+                        if (incl && i == t) { fn.call(this, i); }
                     }
                 };
             }
