@@ -1,8 +1,9 @@
 g.js
 ====
 
-*g.js* is a very small library which provide a simple method to iterate over a
-suit of numbers. It can be used with Node.js or in the browser.
+*g.js* is a very small library (291 bytes minified) which provide
+a simple method to iterate over a suit of numbers. It can be used
+with Node.js or in the browser.
 
 Examples
 --------
