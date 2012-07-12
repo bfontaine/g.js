@@ -9,33 +9,38 @@ Examples
 
 Normal:
 
-     > g.from(1).to(5).do(function(e) {
-         console.log(e);
-     });
-     1
-     2
-     3
-     4
-     5
+```javascript
+> g.from(1).to(5).do(function(e) {
+ console.log(e);
+});
+1
+2
+3
+4
+5
+```
 
 Excluding final step:
 
-     > g.from(1).to(5).excluded().do(function(e) {
-         console.log(e);
-     });
-     1
-     2
-     3
-     4
+```javascript
+> g.from(1).to(5).excluded().do(function(e) {
+ console.log(e);
+});
+1
+2
+3
+4
+```
 
 Negative step:
 
 
-     > g.from(3).to(0).by(-1).do(function(e) {
-         console.log(e);
-     });
-     3
-     2
-     1
-     0
-
+```javascript
+> g.from(3).to(0).by(-1).do(function(e) {
+    console.log(e);
+});
+3
+2
+1
+0
+```
