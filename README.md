@@ -45,3 +45,10 @@ Negative step:
 1
 0
 ```
+
+Get an array:
+
+```javascript
+> g.from(1).to(10).to_a()
+[1,2,3,4,5,6,7,8,9,10]
+```
