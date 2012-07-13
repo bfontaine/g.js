@@ -8,7 +8,7 @@ with Node.js or in the browser.
 Installing
 ----------
 
-Download the latest version here, import the script:
+Download the latest version here, then import the script:
 
 Node:
 ```javascript
