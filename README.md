@@ -15,7 +15,7 @@ Node:
 var g = require('./g');
 ```
 Browser:
-```javascript
+```html
 <script src="…/g.min.js"></script>
 ```
 
