@@ -5,6 +5,38 @@ g.js
 a simple method to iterate over a suit of numbers. It can be used
 with Node.js or in the browser.
 
+Installing
+----------
+
+Download the latest version here, import the script:
+
+Node:
+```javascript
+var g = require('./g');
+```
+Browser:
+```javascript
+<script src="…/g.min.js"></script>
+```
+
+Usage
+-----
+
+```
+g.from(<from>).to(<to>) [.excluded()] [.by(<step>)] { .do(<fn>) | .to_a() }
+```
+
+* `<from>`: first number
+* `<to>`: last number (included)
+* `<step>`: increment for each step (may be negative; default: `1`)
+* `<fn>`: function executed with every number
+
+* `.excluded()`: exclude the last number
+* `.by(…)`: use a custom step
+* `.to_a()`: return an array of numbers
+* `.do(…)`: iterate over the numbers suit with a function.
+
+
 Examples
 --------
 
