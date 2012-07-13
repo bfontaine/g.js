@@ -34,13 +34,13 @@ g.from(<from>).to(<to>) [.excluded()] [.by(<step>)] { .do(<fn>) | .to_a() }
 * `.excluded()`: exclude the last number
 * `.by(…)`: use a custom step
 * `.to_a()`: return an array of numbers
-* `.do(…)`: iterate over the numbers suit with a function.
+* `.do(…)`: iterate over the numbers suit with a function. It can be chained.
 
 
 Examples
 --------
 
-Normal:
+Basic:
 
 ```javascript
 > g.from(1).to(5).do(function(e) {
@@ -76,6 +76,17 @@ Negative step:
 2
 1
 0
+```
+
+`.do(…)` chained:
+
+```javascript
+> var f = function(e) {console.log(e);}
+> g.from(0).to(1).do(f).do(f)
+0
+1
+0
+1
 ```
 
 Get an array:
