@@ -1,7 +1,7 @@
 g.js
 ====
 
-*g.js* is a very small library (291 bytes minified) which provide
+*g.js* is a very small library (0.3kb minified) which provide
 a simple method to iterate over a suit of numbers. It can be used
 with Node.js or in the browser.
 
