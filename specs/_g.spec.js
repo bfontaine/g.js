@@ -69,6 +69,11 @@ describe('Number suit', function() {
         g.from(1).to(0).excluded().by(-1).do(to_a);
         expect(s).toEqual([1]);
     });
+
+    it('should be 1,2,1,2', function() {
+        g.from(1).to(2).do(to_a).do(to_a);
+        expect(s).toEqual([1,2,1,2]);
+    });
 });
 
 describe('Array', function() {

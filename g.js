@@ -13,6 +13,7 @@ var from = function(f) {
                             fn.call(this, i);
                         }
                         if (incl && i == t) { fn.call(this, i); }
+                        return this;
                     },
 
                     to_a: function() {
