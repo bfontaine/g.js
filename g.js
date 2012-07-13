@@ -13,7 +13,15 @@ var from = function(f) {
                             fn.call(this, i);
                         }
                         if (incl && i == t) { fn.call(this, i); }
-                    }
+                    },
+
+                    to_a: function() {
+                        var a=[];
+                        this.do(function(e){
+                            a.push(e);
+                        });
+                        return a;
+                    },
                 };
             }
         };
