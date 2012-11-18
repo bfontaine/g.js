@@ -8,13 +8,16 @@ with Node.js or in the browser.
 Installing
 ----------
 
-Download the latest version here, then import the script:
-
 Node:
+
+Install it with `npm install gjs`.
+
 ```javascript
-var g = require('./g');
+var g = require('gjs');
 ```
+
 Browser:
+
 ```html
 <script src="…/g.min.js"></script>
 ```
