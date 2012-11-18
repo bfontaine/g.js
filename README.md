@@ -78,7 +78,7 @@ Negative step:
 0
 ```
 
-`.do(…)` chained:
+chained `.do(…)`:
 
 ```javascript
 > var f = function(e) {console.log(e);}
