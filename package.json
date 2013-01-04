@@ -15,7 +15,7 @@
   ],
   "devDependencies": {
       "jasmine-node": "*"
-  }
+  },
   "author": "Baptiste Fontaine",
   "license": "MIT",
   "readmeFilename": "README.md",
