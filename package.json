@@ -7,9 +7,15 @@
     "type": "git",
     "url": "git://github.com/bfontaine/g.js.git"
   },
+  "scripts": {
+      "test": "jasmine-node ."
+  },
   "keywords": [
     "generator", "iterator"
   ],
+  "devDependencies": {
+      "jasmine-node": "*"
+  }
   "author": "Baptiste Fontaine",
   "license": "MIT",
   "readmeFilename": "README.md",
